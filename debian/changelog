@@ -1,0 +1,36 @@
+canna-yubin (0.0.20011101) unstable; urgency=low
+
+  * New upstream release
+  * Modify postinst and prerm methods.
+  * Modify the upstream author's name.
+
+ -- Yoshito Komatsu <ykomatsu@debian.org>  Thu, 24 Jan 2002 16:31:07 +0900
+
+canna-yubin (0.0.20010601-1) unstable; urgency=low
+
+  * New upstream release 
+
+ -- Yoshito Komatsu <ykomatsu@debian.or.jp>  Sat,  4 Aug 2001 16:16:44 +0900
+
+canna-yubin (0.0.20010501-3) unstable; urgency=low
+
+  * New upstream release
+
+ -- Yoshito Komatsu <ykomatsu@debian.or.jp>  Mon,  9 Jul 2001 14:56:41 +0900
+
+canna-yubin (0.0.20010501-2) unstable; urgency=low
+
+  * Add README.eucJP file.
+  * Fix debian/copyright file.
+
+ -- Yoshito Komatsu <ykomatsu@debian.or.jp>  Wed,  4 Jul 2001 13:12:34 +0900
+
+canna-yubin (0.0.20010501-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Yoshito Komatsu <ykomatsu@debian.or.jp>  Mon,  2 Jul 2001 11:25:51 +0900
+
+Local variables:
+mode: debian-changelog
+End:

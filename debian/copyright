@@ -1,0 +1,19 @@
+This package was debianized by Yoshito Komatsu <ykomatsu@debian.org> on
+Mon,  2 Jul 2001 11:25:51 +0900.
+
+It was downloaded from http://homepage1.nifty.com/ykomatsu/canna-yubin/
+
+Upstream Authors: Japanese Postal Services Agency
+                  Yoshito Komatsu <yoshito.komatsu@nifty.com>
+
+Upstream Maintainer: Yoshito Komatsu <yoshito.komatsu@nifty.com>
+
+Copyright: Public Domain
+
+ken_all.csv file and jigyosyo.csv file are in the public domain, so you are 
+free to distribute them.
+
+And you are free to distribute yu2can.pl scripts in this package under the 
+terms of the GNU General Public License. On Debian systems, the complete text 
+of the GNU General Public License can be found in 
+/usr/share/common-licenses/GPL file.
