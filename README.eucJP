@@ -1,26 +1,49 @@
 canna-yubin
 README.eucJP
-by Yoshito Komatsu <yoshito.komatsu@nifty.com>
+Copyright (C) 2001 Yoshito Komatsu
+              2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
+License:
+ This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
-郵政省のホームページからダウンロードしてきた住所の郵便番号と
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+Description:
+日本郵便株式会社のWebページからダウンロードしてきた住所の郵便番号と
 事業所の個別郵便番号のCSVファイルををCannaの辞書に変換します。
+
+
+1. ファイル一覧
+
+README
+英語で書かかれたREADMEです。(ですが、ほとんど何も書かれていません。)
 
 README.eucJP
 このファイルです。
 
+COPYING
+著作権・及びライセンスに関する情報です。
+
+COPYING.GPL2
+GPL-2ライセンス文書です。
+
 ken_all.csv
 住所の新郵便番号のCSVファイルです。
-詳しくはhttp://www.post.yusei.go.jp/newnumber/readme.htmを
+詳しくはhttp://www.post.japanpost.jp/zipcode/dl/readme.htmlを
 参照してください。
 
 jigyosyo.csv
 事業所の個別郵便番号のCSVファイルです。
-詳しくはhttp://www.post.yusei.go.jp/newnumber/o_readme.htmを
+詳しくはhttp://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.htmlを
 参照してください。
 
 yu2can.pl
 ken_all.csvとjigyosyo.csvを読み込んでCannaのテキスト辞書に
 変換するPerlスクリプトです。
+
+yubin7.cbd yubin7.cld
+Cannaの郵便番号辞書バイナリです。
 
 Makefile
 ken_all.csvとjigyosyo.csvをCannaのバイナリ辞書に変換して
@@ -28,3 +51,18 @@ ken_all.csvとjigyosyo.csvをCannaのバイナリ辞書に変換して
 
 debian/
 Debianパッケージを作成するために必要なファイル群です。
+
+
+2. バージョン番号について
+
+2014年7月版からバージョン番号の表記が変わります。
+
+旧: 0.0.20011101 (メジャーバージョン.マイナーバージョン.年月日)
+新: 0.1.0.20140731 (メジャーバージョン.マイナーバージョン.リビジョン.郵便番号データの年月日)
+
+
+3. 辞書バイナリの配布について
+辞書バイナリの配布についてどうするか検討したのですが、試験的にソースパッケージの中に一緒に入れてしまう事にしました。
+Perl、その他辞書バイナリを生成するツールをお持ちでないという方は使ってみてください。
+将来的にこの方式を継続するかどうかについてはまだ決めていません。
+

@@ -1,0 +1,5 @@
+Japanese postal code dictionary for Canna
+This package contains Japanese postal code dictionary used by Canna.
+It was made from CSV file produced by JAPAN POST Co., Ltd.
+
+Please see README.eucJP.
