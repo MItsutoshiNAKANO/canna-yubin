@@ -1,7 +1,7 @@
 Source: canna-yubin
 Section: utils
 Priority: optional
-Maintainer: Yoshito Komatsu <ykomatsu@debian.org>
+Maintainer: Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 Build-Depends: debhelper (>> 3.0.0), canna, nkf
 Standards-Version: 3.5.2
 
@@ -10,4 +10,4 @@ Architecture: all
 Depends: canna (>= 3.5b2-40)
 Description: Japanese postal code dictionary for Canna
  This package contains Japanese postal code dictionary used by Canna.
- It was made from CSV file produced by Japanese Postal Services Agency.
+ It was made from CSV file produced by JAPAN POST Co., Ltd.
