@@ -18,7 +18,7 @@ canna-yubin:
 cleantmp:
 	rm -f yubin7.ctd yubin7.ctd.tmp
 
-clean: tmpclean
+clean: cleantmp
 	rm -f $(DICS)
 
 install:
