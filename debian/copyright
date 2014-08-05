@@ -37,12 +37,12 @@ Files: debian/README.Debian debian/dirs debian/postinst debian/prerm
 Copyright: 2001 Yoshito Komatsu
 License: GPL-2+
 
-Files: debian/changelog debian/control debian/docs
+Files: debian/changelog debian/control debian/docs debian/rules
 Copyright: 2001 Yoshito Komatsu
            2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 
-Files: debian/compat debian/copyright debian/rules debian/source/*
+Files: debian/compat debian/copyright debian/source/*
 Copyright: 2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 

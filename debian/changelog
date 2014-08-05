@@ -1,3 +1,9 @@
+canna-yubin (0.1.1.20140731-1ppa1) trusty; urgency=low
+
+  * Fixed 0.1.0's bug: debian/rules forgot copying yubin.dics.dir.off.
+
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Tue, 05 Aug 2014 02:44:01 +0900
+
 canna-yubin (0.1.0.20140731-1ppa1) trusty; urgency=low
 
   * updated data to 20140731.
