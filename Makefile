@@ -11,6 +11,7 @@ DESTDIR=
 DICS=yubin7.cbd yubin7.cld
 
 canna-yubin:
+	diff COPYING debian/copyright
 	./yu2can.pl > yubin7.ctd.tmp
 	nkf -e yubin7.ctd.tmp > yubin7.ctd
 	mkbindic yubin7.ctd
