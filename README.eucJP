@@ -30,13 +30,11 @@ GPL-2ライセンス文書です。
 
 ken_all.csv
 住所の新郵便番号のCSVファイルです。
-詳しくはhttp://www.post.japanpost.jp/zipcode/dl/readme.htmlを
-参照してください。
+詳しくは http://www.post.japanpost.jp/zipcode/dl/readme.html を参照してください。
 
 jigyosyo.csv
 事業所の個別郵便番号のCSVファイルです。
-詳しくはhttp://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.htmlを
-参照してください。
+詳しくは http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html を参照してください。
 
 yu2can.pl
 ken_all.csvとjigyosyo.csvを読み込んでCannaのテキスト辞書に
@@ -58,11 +56,18 @@ Debianパッケージを作成するために必要なファイル群です。
 2014年7月版からバージョン番号の表記が変わります。
 
 旧: 0.0.20011101 (メジャーバージョン.マイナーバージョン.年月日)
-新: 0.1.0.20140731 (メジャーバージョン.マイナーバージョン.リビジョン.郵便番号データの年月日)
+新: 0.1.1.20140731.1 (メジャーバージョン.マイナーバージョン.リビジョン.郵便番号データの年月日.ビルド)
 
 
 3. 辞書バイナリの配布について
-辞書バイナリの配布についてどうするか検討したのですが、試験的にソースパッケージの中に一緒に入れてしまう事にしました。
-Perl、その他辞書バイナリを生成するツールをお持ちでないという方は使ってみてください。
+辞書バイナリの配布についてどうするか検討したのですが、
+試験的にソースパッケージの中に一緒に入れてしまう事にしました。
+Perl、その他辞書バイナリを生成するツールをお持ちでないという方は使用してみてください。
 将来的にこの方式を継続するかどうかについてはまだ決めていません。
 
+一緒に入っている辞書バイナリのライセンスについて、
+日本郵便株式会社と同様にpublic-domainとします。
+詳しくはhttp://www.post.japanpost.jp/zipcode/dl/readme.html および
+ttp://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html を参照してください。
+(これがライセンスとして妥当であるか否かは議論の余地があると思います。
+良いアイデアがあればMLで教えてください。)

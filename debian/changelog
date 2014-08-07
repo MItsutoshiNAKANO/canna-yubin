@@ -1,3 +1,10 @@
+canna-yubin (0.1.1.20140731.1-1ppa1) trusty; urgency=low
+
+  * Changed license of binary dictionary GPL-2+ => public-domain .
+  * Fixed lintian's warnings.
+
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Tue, 05 Aug 2014 12:14:34 +0900
+
 canna-yubin (0.1.1.20140731-1ppa1) trusty; urgency=low
 
   * Fixed 0.1.0's bug: debian/rules forgot copying yubin.dics.dir.off.
