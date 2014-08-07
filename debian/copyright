@@ -1,5 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: canna-yubin
+Upstream-Contact: Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
+Source: https://sourceforge.jp/projects/canna-yubin/releases/
 
 Files: ken_all.csv
 Copyright: 2014 JAPAN POST Co., Ltd.
@@ -11,7 +13,15 @@ Copyright: 2014 JAPAN POST Co., Ltd.
 License: public-domain
  Please see http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html .
 
-Files: yubin7.cbd yubin7.cld Makefile README.eucJP
+Files: yubin7.cbd yubin7.cld
+Copyright: 2001 Yoshito Komatsu
+           2014 JAPAN POST Co., Ltd.
+           2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
+License: public-domain
+ Please see http://www.post.japanpost.jp/zipcode/dl/readme.html and
+ http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html .
+
+Files: Makefile README.eucJP
 Copyright: 2001 Yoshito Komatsu
            2014 JAPAN POST Co., Ltd.
            2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
