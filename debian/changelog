@@ -1,3 +1,10 @@
+canna-yubin (0.1.1.20140731.3-1ppa1) trusty; urgency=low
+
+  * Fixed debian/copyright COPYING: some files duplicate in them.
+  * Changed Makefie: skip making a tmpfile (using pipe).
+
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Fri, 08 Aug 2014 15:25:28 +0900
+
 canna-yubin (0.1.1.20140731.2-1ppa1) trusty; urgency=low
 
   * Fixed mkdir -p  make install's target directory.

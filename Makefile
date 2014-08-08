@@ -1,3 +1,4 @@
+#! /usr/bin/make -f
 # Copyright (C) 2001 Yoshito Komatsu
 #               2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 #
@@ -11,14 +12,13 @@ MKDIR_P=mkdir -p
 DESTDIR=
 DICS=yubin7.cbd yubin7.cld
 
-canna-yubin:
+build:
 	diff COPYING debian/copyright
-	./yu2can.pl > yubin7.ctd.tmp
-	nkf -e yubin7.ctd.tmp > yubin7.ctd
+	./yu2can.pl | nkf -Se >yubin7.ctd
 	mkbindic yubin7.ctd
 
 cleantmp:
-	rm -f yubin7.ctd yubin7.ctd.tmp
+	rm -f yubin7.ctd
 
 clean: cleantmp
 	rm -f $(DICS)
