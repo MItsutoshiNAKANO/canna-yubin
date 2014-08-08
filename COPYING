@@ -23,12 +23,6 @@ License: public-domain
 
 Files: Makefile README.eucJP
 Copyright: 2001 Yoshito Komatsu
-           2014 JAPAN POST Co., Ltd.
-           2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
-License: GPL-2+
-
-Files: Makefile README.eucJP
-Copyright: 2001 Yoshito Komatsu
            2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 
@@ -36,8 +30,12 @@ Files: yu2can.pl
 Copyright: 2001 Yoshito Komatsu
 License: GPL-2+
 
-Files: COPYING COPYING.GPL2 Makefile README
+Files: COPYING README
 Copyright: 2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
+License: GPL-2+
+
+Files: COPYING.GPL2
+Copyright: 1989, 1991 Free Software Foundation, Inc.
 License: GPL-2+
 
 # If you want to use GPL v2 or later for the /debian/* files use 
