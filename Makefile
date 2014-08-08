@@ -7,6 +7,7 @@
 #
 # You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
+MKDIR_P=mkdir -p
 DESTDIR=
 DICS=yubin7.cbd yubin7.cld
 
@@ -23,4 +24,5 @@ clean: cleantmp
 	rm -f $(DICS)
 
 install:
+	$(MKDIR_P) ${DESTDIR}/var/lib/canna/dic/canna
 	install -m 644 ${DICS} ${DESTDIR}/var/lib/canna/dic/canna

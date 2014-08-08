@@ -1,3 +1,9 @@
+canna-yubin (0.1.1.20140731.2-1ppa1) trusty; urgency=low
+
+  * Fixed mkdir -p  make install's target directory.
+
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Fri, 08 Aug 2014 12:48:53 +0900
+
 canna-yubin (0.1.1.20140731.1-1ppa1) trusty; urgency=low
 
   * Changed license of binary dictionary GPL-2+ => public-domain .
