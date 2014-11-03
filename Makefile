@@ -14,7 +14,7 @@ DICS=yubin7.cbd yubin7.cld
 
 build:
 	diff COPYING debian/copyright
-	./yu2can.pl | nkf -Se >yubin7.ctd
+	./yu2.PL >yubin7.ctd
 	mkbindic yubin7.ctd
 
 cleantmp:
