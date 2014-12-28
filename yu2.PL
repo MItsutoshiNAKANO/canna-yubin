@@ -50,6 +50,7 @@ sub printCANNAjigyosho($$$)
 sub printWNNyubin($$)
 {
     my ($seven, $jusho) = @_;
+    $seven =~ tr/0123456789/０１２３４５６７８９/;
     print "${seven} ${jusho} 地名 0\n";
 }
 
@@ -57,6 +58,7 @@ sub printWNNyubin($$)
 sub printWNNjigyosho($$$)
 {
     my ($seven, $jigyosho, $jusho) = @_;
+    $seven =~ tr/0123456789/０１２３４５６７８９/;
     print "${seven} ${jigyosho} 地名 0\n";
     print "${seven} ${jusho} 地名 0\n";
 }
