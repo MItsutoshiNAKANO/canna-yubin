@@ -1,0 +1,65 @@
+2014-12-30  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
+
+	* ChangeLog: create this file.
+	  close #34750
+	  https://sourceforge.jp/ticket/browse.php?group_id=9489&tid=34750
+	* COPYING: add ChangeLog.
+	* debian/copyright: add ChangeLog.
+
+2014-08-08  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
+
+	* Makefile: modify 3 points.
+	  + add check COPYING and debian/copyright.
+	  + add -p option to mkdir.
+	  + skip a tmpfile (using pipe).
+	* COPYING: change type from the symlink to the file.
+	* debian/copyright: modify 2 points.
+	  + change binary dictionary's license
+	      GPL-2+ -> public-domain
+	  + fix duplicate entries of Makefile, README.eucJP, README.
+	* debian/docs: delete COPYING, it is same as debian/copyright.
+	* debian/rules: use dh command.
+	* README.eucJP: change version numbering rule.
+	* debian/changelog: release 0.1.1.20140731.2-1ppa1.
+
+2014-08-05  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
+
+	* COPYING: create new file.
+	* debian/changelog: release 0.1.1.20140731-1ppa1.
+	* debian/copyright: change format to
+	http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/ .
+	* debian/docs: add COPYING.
+	* debian/rules: revert from dh command to dh_* commands.
+
+2014-08-04  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
+
+	* ken_all.csv, jigyosyo.csv: update data to 2014-07-31.
+	* README, COPYING.GPL2: new files.
+	* README.eucJP: modify from post.yusei.go.jp to japanpost.jp.
+	* Makefile: modify "clean" rule.
+	* debian/*: modify for lintian.l
+
+2002-01-24  Yoshito Komatsu  <ykomatsu@akaumigame.org>
+
+	* ken_all.csv, jigyosyo.csv: update postal-code data.
+	* debian/*: modify postinst and perm methods.
+	* *: modify the upstream author's name.
+
+2001-08-04  Yoshito Komatsu  <ykomatsu@akaumigame.org>
+
+	* ken_all.csv, jigyosyo.csv: update postal-code data.
+
+2001-07-09  Yoshito Komatsu  <ykomatsu@akaumigame.org>
+
+	* ken_all.csv, jigyosyo.csv: update postal-code data.
+
+2001-07-04  Yoshito Komatsu  <ykomatsu@akaumigame.org>
+
+	* README.eucJP: add new file.
+	* debian/copyright: fix.
+
+2001-07-02  Yoshito Komatsu  <ykomatsu@akaumigame.org>
+
+	* Makefile, yu2can.pl, etc...: initial release.
+	Please see
+	http://lists.debian.or.jp/debian-devel/200107/msg00005.html
