@@ -30,7 +30,7 @@ Files: yu2can.pl
 Copyright: 2001 Yoshito Komatsu
 License: GPL-2+
 
-Files: COPYING README ChangeLog
+Files: COPYING README ChangeLog AUTHORS
 Copyright: 2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 

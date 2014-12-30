@@ -28,6 +28,16 @@ COPYING
 COPYING.GPL2
 GPL-2ライセンス文書です。
 
+AUTHORS
+著者一覧です。
+canna-yubinに改変を加えた方はお名前・email address・追加したfile名・
+変更したfile名の一覧を追加してください。
+
+ChangeLog
+変更履歴です。
+canna-yubinに改変を加えた方は日付、お名前、email address、
+追加変更したfile名、変更内容をEnglishで追記してください。
+
 ken_all.csv
 住所の新郵便番号のCSVファイルです。
 詳しくは http://www.post.japanpost.jp/zipcode/dl/readme.html を参照してください。

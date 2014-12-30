@@ -3,8 +3,11 @@
 	* ChangeLog: create this file.
 	  close #34750
 	  https://sourceforge.jp/ticket/browse.php?group_id=9489&tid=34750
-	* COPYING: add ChangeLog.
-	* debian/copyright: add ChangeLog.
+	* AUTHORS: create this file.  close #34758
+	  https://sourceforge.jp/ticket/browse.php?group_id=9489&tid=34758
+	* debian/docs: add ChangeLog & AUTHORS.
+	* COPYING: add ChangeLog & AUTHORS.
+	* debian/copyright: add ChangeLog & AUTHORS.
 
 2014-08-08  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 

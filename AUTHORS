@@ -1,0 +1,26 @@
+AUTHORS
+=======
+
+* JAPAN POST Co., Ltd. - update Japanese zip code lists every month.
+So canna-yubin includes them.
+Please see also:
+http://www.post.japanpost.jp/zipcode/dl/readme.html
+http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html
+
+ken_all.csv jigyosyo.csv
+
+* Yoshito Komatsu <ykomatsu@akaumigame.org> -
+wrote original canna-yubin in 2001.
+
+Makefile README.eucJP yu2can.pl debian/README.Debian debian/changelog
+debian/control debian/copyright debian/dirs debian/docs debian/postinst
+debian/prerm debian/rules debian/yubin.dics.dir.off
+
+* Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp> -
+is managing canna-yubin project since 2014.
+
+create:
+AUTHORS COPYING ChangeLog README debian/compat debian/source/format
+modify:
+Makefile README.eucJP debian/changelog debian/control debian/copyright
+debian/docs debian/rules
