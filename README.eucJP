@@ -1,17 +1,33 @@
 canna-yubin
+===========
+
 README.eucJP
+
 Copyright (C) 2001 Yoshito Komatsu
               2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
-License:
- This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
- This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+License
+-------
 
- You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published
+by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
 
-Description:
+ This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+Description
+-----------
+
 日本郵便株式会社のWebページからダウンロードしてきた住所の郵便番号と
-事業所の個別郵便番号のCSVファイルををCannaの辞書に変換します。
+事業所の個別郵便番号のCSVファイルををCannaまたは(Free)Wnnの辞書に変換します。
 
 
 1. ファイル一覧
@@ -38,24 +54,32 @@ ChangeLog
 canna-yubinに改変を加えた方は日付、お名前、email address、
 追加変更したfile名、変更内容をEnglishで追記してください。
 
-ken_all.csv
+KEN_ALL.CSV
 住所の新郵便番号のCSVファイルです。
 詳しくは http://www.post.japanpost.jp/zipcode/dl/readme.html を参照してください。
 
-jigyosyo.csv
+JIGYOSYO.CSV
 事業所の個別郵便番号のCSVファイルです。
-詳しくは http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html を参照してください。
+詳しくは http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html を
+参照してください。
 
-yu2can.pl
-ken_all.csvとjigyosyo.csvを読み込んでCannaのテキスト辞書に
+yu2.PL
+KEN_ALL.CSVとJIGYOSYO.CSVを読み込んでCannaおよび(Free)Wnnのテキスト辞書に
 変換するPerlスクリプトです。
 
 yubin7.cbd yubin7.cld
 Cannaの郵便番号辞書バイナリです。
 
+yubin7.dic
+(Free)Wnnの郵便番号辞書バイナリです。
+
 Makefile
-ken_all.csvとjigyosyo.csvをCannaのバイナリ辞書に変換して
+KEN_ALL.CSVとJIGYOSYO.CSVをCannaのバイナリ辞書に変換して
 /var/lib/canna/dic/canna/にインストールするためのMakefileです。
+
+Makefile.wnn
+KEN_ALL.CSVとJIGYOSYO.CSVを(Free)Wnnのバイナリ辞書に変換して
+インストールするためのMakefileです。
 
 debian/
 Debianパッケージを作成するために必要なファイル群です。
@@ -72,7 +96,8 @@ Debianパッケージを作成するために必要なファイル群です。
 3. 辞書バイナリの配布について
 辞書バイナリの配布についてどうするか検討したのですが、
 試験的にソースパッケージの中に一緒に入れてしまう事にしました。
-Perl、その他辞書バイナリを生成するツールをお持ちでないという方は使用してみてください。
+Perl、その他辞書バイナリを生成するツールをお持ちでないという方は
+使用してみてください。
 将来的にこの方式を継続するかどうかについてはまだ決めていません。
 
 一緒に入っている辞書バイナリのライセンスについて、

@@ -3,17 +3,17 @@ Upstream-Name: canna-yubin
 Upstream-Contact: Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 Source: https://sourceforge.jp/projects/canna-yubin/releases/
 
-Files: ken_all.csv
+Files: KEN_ALL.CSV
 Copyright: 2014 JAPAN POST Co., Ltd.
 License: public-domain
  Please see http://www.post.japanpost.jp/zipcode/dl/readme.html .
 
-Files: jigyosho.csv
+Files: JIGYOSHO.CSV
 Copyright: 2014 JAPAN POST Co., Ltd.
 License: public-domain
  Please see http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html .
 
-Files: yubin7.cbd yubin7.cld
+Files: yubin7.cbd yubin7.cld yubin7.dic
 Copyright: 2001 Yoshito Komatsu
            2014 JAPAN POST Co., Ltd.
            2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
@@ -21,13 +21,9 @@ License: public-domain
  Please see http://www.post.japanpost.jp/zipcode/dl/readme.html and
  http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html .
 
-Files: Makefile README.eucJP
+Files: Makefile README.eucJP yu2.PL
 Copyright: 2001 Yoshito Komatsu
            2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
-License: GPL-2+
-
-Files: yu2can.pl
-Copyright: 2001 Yoshito Komatsu
 License: GPL-2+
 
 Files: COPYING README ChangeLog AUTHORS

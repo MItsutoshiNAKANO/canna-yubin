@@ -7,7 +7,7 @@ Please see also:
 http://www.post.japanpost.jp/zipcode/dl/readme.html
 http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html
 
-ken_all.csv jigyosyo.csv
+KEN_ALL.CSV JIGYOSYO.CSV
 
 * Yoshito Komatsu <ykomatsu@akaumigame.org> -
 wrote original canna-yubin in 2001.
@@ -22,5 +22,5 @@ is managing canna-yubin project since 2014.
 create:
 AUTHORS COPYING ChangeLog README debian/compat debian/source/format
 modify:
-Makefile README.eucJP debian/changelog debian/control debian/copyright
+Makefile README.eucJP yu2.PL debian/changelog debian/control debian/copyright
 debian/docs debian/rules

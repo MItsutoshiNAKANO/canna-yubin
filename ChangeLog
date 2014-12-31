@@ -1,3 +1,28 @@
+2014-12-31  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
+
+	* yu2.PL: renamed from yu2can.pl, supported (Free)Wnn (close #34710)
+	  Others changes:
+	  + convert charset encoding between Shift-JIS and EUC-JP.
+	  + default CSV files name into capital letters from small letters,
+	    because JAPAN POST Co., Ltd. shows files in capital letters.
+	    (close #34087)
+	* Makefile.wnn: created: supported (Free)Wnn
+	* Makefile: removed nkf, because yu2.PL can convert encoding
+	* COPYING: modified 2 points:
+	  + CSV files name into capital letters
+	  + yubin7.dic: add: (Free)Wnn's dictionary
+	* debian/copyright: same as COPYING, see COPYING
+	* README: modified 2 points:
+	  + added (Free)Wnn
+	  + modified sentences
+	* README.eucJP:
+	* AUTHORS: modified 2 points:
+	  + renamed CSV files
+	  + added yu2.PL
+	* KEN_ALL.CSV: renamed fronm ken_all.csv
+	* JIGYOSYO.CSV: renamed from jigyosyo.csv
+	* ChangeLog: added this entry
+
 2014-12-30  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 
 	* ChangeLog: create this file.
