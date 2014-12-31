@@ -19,8 +19,8 @@
 	* AUTHORS: modified 2 points:
 	  + renamed CSV files
 	  + added yu2.PL
-	* KEN_ALL.CSV: renamed fronm ken_all.csv
-	* JIGYOSYO.CSV: renamed from jigyosyo.csv
+	* KEN_ALL.CSV: renamed fronm ken_all.csv and updated to 2014-12-26
+	* JIGYOSYO.CSV: renamed from jigyosyo.csv and updated to 2014-12-26
 	* ChangeLog: added this entry
 
 2014-12-30  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
