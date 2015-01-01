@@ -1,0 +1,22 @@
+How to INSTALL canna-yubin
+==========================
+
+
+for Canna
+---------
+
+0) Prepare Canna's "mkbindic" command.
+1) Type "make".
+2) Type "make install" as root.
+
+
+for (Free)Wnn
+-------------
+
+0) Prepare (Free)Wnn's "atod" command in your "$PATH".
+(Some distributions do not have "atod" command in (Free)Wnn package.
+ (eg. Ubuntu))
+(The upstream's FreeWnn installs "atod" to "/usr/local/bin/Wnn4/".)
+
+1) Type "make -f Makefile.wnn".
+2) Type "make -f Makefile.wnn install" as root.

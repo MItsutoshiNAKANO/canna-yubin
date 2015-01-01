@@ -26,8 +26,16 @@ Copyright: 2001 Yoshito Komatsu
            2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 
-Files: COPYING README ChangeLog AUTHORS
+Files: README
 Copyright: 2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
+License: GPL-2+
+
+Files: COPYING ChangeLog AUTHORS
+Copyright: 2014, 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
+License: GPL-2+
+
+Files: INSTALL NEWS
+Copyright: 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 
 Files: COPYING.GPL2
@@ -46,8 +54,12 @@ Copyright: 2001 Yoshito Komatsu
            2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 
-Files: debian/compat debian/copyright debian/source/*
+Files: debian/compat debian/source/*
 Copyright: 2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
+License: GPL-2+
+
+Files: debian/copyright
+Copyright: 2014, 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 
 License: GPL-2+

@@ -1,3 +1,12 @@
+2015-01-01  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
+
+	* INSTALL: added
+	* NEWS: added
+	* AUTHORS: added INSTALL and NEWS
+	* COPYING: added INSTALL and NEWS
+	* debian/copyright: added INSTALL and NEWS
+	* ChangeLog: added this entry
+
 2014-12-31  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 
 	* yu2.PL: renamed from yu2can.pl, supported (Free)Wnn (close #34710)
