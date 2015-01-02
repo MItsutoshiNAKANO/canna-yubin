@@ -14,10 +14,13 @@ WNNDICS=yubin7.dic
 WNNDICDIR=yubin
 WNNDICPATH=${DESTDIR}/lib/wnn/ja_JP/dic/${WNNDICDIR}
 
-build-wnn:
-	diff COPYING debian/copyright
-	./yu2.PL --ime=wnn >yubin7.u
+build: yubin7.dic
+
+yubin7.dic: yubin7.u
 	atod -s 200000 yubin7.dic <yubin7.u
+
+yubin7.u: ../KEN_ALL.CSV ../JIGYOSYO.CSV
+	../yu2.PL --yubin=../KEN_ALL.CSV --jigyosho=../JIGYOSYO.CSV  --ime=wnn >yubin7.u
 
 cleantmp:
 	rm -f yubin7.u

@@ -1,3 +1,10 @@
+2015-01-02  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
+
+	* Wnn/Makefile: moved from Makefile.wnn
+	* COPYING: moved to Wnn/Makefile from Makefile.wnn
+	* debian/copyright: moved to Wnn/Makefile from Makefile.wnn
+	* AUTHORS: moved to Wnn/Makefile from Makefile.wnn
+
 2015-01-01  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 
 	* INSTALL: added

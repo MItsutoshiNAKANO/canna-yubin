@@ -20,7 +20,9 @@ debian/prerm debian/rules debian/yubin.dics.dir.off
 is managing canna-yubin project since 2014.
 
 create:
-AUTHORS COPYING ChangeLog README INSTALL NEWS debian/compat debian/source/format
+AUTHORS COPYING ChangeLog README INSTALL NEWS
+debian/compat debian/source/format
 modify:
-Makefile README.eucJP yu2.PL debian/changelog debian/control debian/copyright
+Makefile README.eucJP yu2.PL Wnn/Makefile
+debian/changelog debian/control debian/copyright
 debian/docs debian/rules
