@@ -1,3 +1,20 @@
+2015-01-05  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
+
+	* configure.ac: added to use Automake.
+	* Makefile.am: added to use Automake.
+	* Canna/Makefile.am: added to use Automake.
+	* Wnn/Makefile.am: added to use Automake.
+	* INSTALL: modified for ./configure.
+	* NEWS: modified for 0.3.0.20141226.0.
+	* .gitignore: added to use Autotools.
+	* COPYING: modified for Autotools.
+	* debian/copyright: modified for Autotools.
+	* AUTHORS: modified for Autotools.
+	* README.eucJP: modified files list.
+	* Makefile: removed to use Automake.
+	* Canna/Makefile: removed to use Automake.
+	* Wnn/Makefile: removed to use Automake.
+
 2015-01-02  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 
 	* Wnn/Makefile: moved from Makefile.wnn

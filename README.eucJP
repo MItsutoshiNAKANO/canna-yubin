@@ -4,7 +4,7 @@ canna-yubin
 README.eucJP
 
 Copyright (C) 2001 Yoshito Komatsu
-              2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
+              2014, 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 
 License
 -------
@@ -32,62 +32,12 @@ Description
 
 1. ファイル一覧
 
-README
-英語で書かかれたREADMEです。(ですが、ほとんど何も書かれていません。)
-
-README.eucJP
-このファイルです。
-
-COPYING
-著作権・及びライセンスに関する情報です。
-
-COPYING.GPL2
-GPL-2ライセンス文書です。
-
-AUTHORS
-著者一覧です。
-canna-yubinに改変を加えた方はお名前・email address・追加したfile名・
-変更したfile名の一覧を追加してください。
-
-ChangeLog
-変更履歴です。
-canna-yubinに改変を加えた方は日付、お名前、email address、
-追加変更したfile名、変更内容をEnglishで追記してください。
-
-KEN_ALL.CSV
-住所の新郵便番号のCSVファイルです。
-詳しくは http://www.post.japanpost.jp/zipcode/dl/readme.html を参照してください。
-
-JIGYOSYO.CSV
-事業所の個別郵便番号のCSVファイルです。
-詳しくは http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html を
-参照してください。
-
-yu2.PL
-KEN_ALL.CSVとJIGYOSYO.CSVを読み込んでCannaおよび(Free)Wnnのテキスト辞書に
-変換するPerlスクリプトです。
-
-yubin7.cbd yubin7.cld
-Cannaの郵便番号辞書バイナリです。
-
-yubin7.dic
-(Free)Wnnの郵便番号辞書バイナリです。
-
-Makefile
-KEN_ALL.CSVとJIGYOSYO.CSVをCannaのバイナリ辞書に変換して
-/var/lib/canna/dic/canna/にインストールするためのMakefileです。
-
-Makefile.wnn
-KEN_ALL.CSVとJIGYOSYO.CSVを(Free)Wnnのバイナリ辞書に変換して
-インストールするためのMakefileです。
-
-debian/
-Debianパッケージを作成するために必要なファイル群です。
-
+Please see AUTHORS, COPYING.
+AUTHORS, COPYINGを御覧下さい。
 
 2. バージョン番号について
 
-2014年7月版からバージョン番号の表記が変わります。
+2014年7月版からバージョン番号の表記が変わりました。
 
 旧: 0.0.20011101 (メジャーバージョン.マイナーバージョン.年月日)
 新: 0.1.1.20140731.1 (メジャーバージョン.マイナーバージョン.リビジョン.郵便番号データの年月日.ビルド)

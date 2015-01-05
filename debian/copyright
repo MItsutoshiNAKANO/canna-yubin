@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: canna-yubin
-Upstream-Contact: Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
-Source: https://sourceforge.jp/projects/canna-yubin/releases/
+Upstream-Contact: canna-yubin-misc ML <canna-yubin-misc@lists.sourceforge.jp>
+Source: https://sourceforge.jp/projects/canna-yubin/
 
 Files: KEN_ALL.CSV
 Copyright: 2014 JAPAN POST Co., Ltd.
@@ -13,7 +13,7 @@ Copyright: 2014 JAPAN POST Co., Ltd.
 License: public-domain
  Please see http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html .
 
-Files: yubin7.cbd yubin7.cld yubin7.dic
+Files: Canna/yubin7.cbd Canna/yubin7.cld Wnn/yubin7.dic
 Copyright: 2001 Yoshito Komatsu
            2014 JAPAN POST Co., Ltd.
            2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
@@ -21,30 +21,50 @@ License: public-domain
  Please see http://www.post.japanpost.jp/zipcode/dl/readme.html and
  http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html .
 
-Files: Makefile README.eucJP yu2.PL
+Files: yu2.PL
 Copyright: 2001 Yoshito Komatsu
            2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 
-Files: Wnn/Makefile
+Files: Canna/Makefile.am Wnn/Makefile.am README.eucJP
 Copyright: 2001 Yoshito Komatsu
            2014, 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 
-Files: README
-Copyright: 2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
-License: GPL-2+
-
-Files: COPYING ChangeLog AUTHORS
+Files: README COPYING ChangeLog AUTHORS
 Copyright: 2014, 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 
-Files: INSTALL NEWS
+Files: Makefile.am configure.ac NEWS
 Copyright: 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 
 Files: COPYING.GPL2
 Copyright: 1989, 1991 Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: INSTALL
+Copyright: 1994-1996, 1999-2002, 2004-2013 Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: configure
+Copyright: 1992-1996, 1998-2012 Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: Makefile.in Canna/Makefile.in Wnn/Makefile.in
+Copyright: 1994-2013 Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: aclocal.m4 missing
+Copyright: 1996-2013 Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: install-sh
+Copyright: 1994 X Consortium
+License: GPL-2+
+
+Files: .gitignore
+Copyright: 2014 GitHub, Inc.
 License: GPL-2+
 
 # If you want to use GPL v2 or later for the /debian/* files use 

@@ -9,6 +9,7 @@ http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html
 
 KEN_ALL.CSV JIGYOSYO.CSV
 
+
 * Yoshito Komatsu <ykomatsu@akaumigame.org> -
 wrote original canna-yubin in 2001.
 
@@ -16,13 +17,31 @@ Makefile README.eucJP yu2can.pl debian/README.Debian debian/changelog
 debian/control debian/copyright debian/dirs debian/docs debian/postinst
 debian/prerm debian/rules debian/yubin.dics.dir.off
 
+
 * Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp> -
 is managing canna-yubin project since 2014.
 
-create:
-AUTHORS COPYING ChangeLog README INSTALL NEWS
+created automatically:
 debian/compat debian/source/format
-modify:
-Makefile README.eucJP yu2.PL Wnn/Makefile
-debian/changelog debian/control debian/copyright
-debian/docs debian/rules
+created:
+AUTHORS COPYING ChangeLog README NEWS Makefile.am
+modified:
+README.eucJP yu2.PL configure.ac Canna/Makefile.am Wnn/Makefile.am
+debian/changelog debian/control debian/copyright debian/docs debian/rules
+
+
+* Free Software Foundation, INC. - created automatically:
+COPYING.GPL2 INSTALL Makefile.in Canna/Makafile.in Wnn/Makafile.in aclocal.m4
+configure missing
+
+
+* X Consortium - created automatically:
+install-sh
+
+
+* GitHub, Inc. - created automatically:
+.gitignore
+
+
+* public-domain - created automatically by canna-yubin:
+Canna/yubin7.cbd Canna/yubin7.cld Wnn/yubin7.dic

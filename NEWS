@@ -1,8 +1,36 @@
 canna-yubin NEWS
 ================
 
-2015-01-01
-----------
+0.3.0.20141226.0
+----------------
+
+Changed to use ./configure.
+
+* If you want to build Canna dictionary:
+
+0) Prepare Canna's "mkbindic".
+1) Type "./configure --with-canna".
+2) Type "make".
+3) You will get "Canna/yubin7.cbd" and "Canna/yubin7.cld".
+
+
+* If you want to build Wnn dictionary:
+
+0) Prepare Wnn's "atod".
+  NOTES:
+  a) Some distributions do not have "atod" in FreeWnn package.
+  b) The upstream version's FreeWnn installs atod to "/usr/local/bin/Wnn4".
+    So you have to add "/usr/local/bin/Wnn4" to $PATH.
+1) Type "./configure --with-wnn --without-canna".
+2) Type "make".
+3) You will get "Wnn/yubin7.dic".
+
+
+* Please see "./configure --help".
+
+
+0.2.0.20141226.0
+-----------------
 
 * yu2.PL:
   + renamed from yu2can.pl, supported (Free)Wnn.
