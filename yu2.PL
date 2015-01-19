@@ -136,6 +136,11 @@ L<http://www.post.japanpost.jp/zipcode/dl/kogaki/zip/ken_all.zip>.
 You can get from
 L<http://www.post.japanpost.jp/zipcode/dl/jigyosyo/zip/jigyosyo.zip>.
 
+=head1 SEE ALSO
+
+mkbindic(1), atod(1), L<http://www.post.japanpost.jp/zipcode/dl/readme.html>,
+L<http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html>
+
 =head1 Copyright(C)
 
 2001 Yoshito Komatsu <ykomatsu@akaumigame.org>
