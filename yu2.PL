@@ -1,23 +1,4 @@
 #! /usr/bin/env perl
-#
-# Copyright (C) 2001 Yoshito Komatsu
-#               2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
-# This program is free software; you can redistribute it and/or modify it under
-# the terms of the GNU General Public License as published
-# by the Free Software Foundation; either version 2 of the License,
-# or (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-# or FITNESS FOR A PARTICULAR PURPOSE.
-# See the GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License along
-# with this program; if not, write to
-# the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-# MA 02110-1301, USA.
-#
-# yu2.PL - convert CSV file to Canna|Wnn dictionary
 
 use strict;
 use warnings;
@@ -31,7 +12,10 @@ use constant {
 
 sub usage()
 {
-    print STDERR "usage: yu2.PL [--yubin KEN_ALL.CSV] [--jigyosho JIGYOSYO.CSV] [--ime={canna|wnn}]";
+    print STDERR "usage: yu2.PL [--yubin=KEN_ALL.CSV] [--jigyosho=JIGYOSYO.CSV] [--ime={canna|wnn}]
+
+If you want see more detail, type 'pod2text yu2.PL'.
+";
     exit(2);
 }
 
@@ -54,7 +38,6 @@ sub printWNNyubin($$)
     print "${seven} ${jusho} 地名 0\n";
 }
 
-
 sub printWNNjigyosho($$$)
 {
     my ($seven, $jigyosho, $jusho) = @_;
@@ -62,7 +45,6 @@ sub printWNNjigyosho($$$)
     print "${seven} ${jigyosho} 地名 0\n";
     print "${seven} ${jusho} 地名 0\n";
 }
-
 
 
 my ($yubin, $jigyosho, $ime) = ('./KEN_ALL.CSV', './JIGYOSYO.CSV', CANNA);
@@ -101,3 +83,80 @@ while (<CSV>) {
 
 }
 close (CSV);
+
+=pod
+
+=head1 NAME
+
+yu2.PL - convert Japanese ZIP codes CSV files to Canna|(Free)Wnn's dictionary
+
+=head1 SYNOPSIS
+
+yu2.PL [--yubin=KEN_ALL.CSV] [--jigyosho=JIGYOSYO.CSV] [--ime={canna|wnn}]
+
+=head1 DESCRIPTION
+
+The yu2.PL is a program for converting from Japanese ZIP codes CSV files
+to Canna|(Free)Wnn readable CSV files.
+
+Japanese ZIP codes CSV files can get from JAPAN POST Co., Ltd.'s Web pages.
+
+=head2 See
+
+L<http://www.post.japanpost.jp/zipcode/dl/kogaki-zip.html>
+L<http://www.post.japanpost.jp/zipcode/dl/jigyosyo/index-zip.html>
+
+=head1 OPTIONS
+
+=head2 --yubin=F<KEN_ALL.CSV>
+
+Specify ZIP codes file.
+
+=head2 --jigyosho=F<JIGYOSYO.CSV>
+
+Specify office ZIP codes file.
+
+=head2 --ime={canna|wnn}
+
+Specify IME type.
+
+=head3 Default
+
+canna
+
+=head1 FILES
+
+=head2 F<KEN_ALL.CSV>
+
+You can get from
+L<http://www.post.japanpost.jp/zipcode/dl/kogaki/zip/ken_all.zip>.
+
+=head2 F<JIGYOSYO.CSV>
+
+You can get from
+L<http://www.post.japanpost.jp/zipcode/dl/jigyosyo/zip/jigyosyo.zip>.
+
+=head1 Copyright(C)
+
+2001 Yoshito Komatsu <ykomatsu@akaumigame.org>
+
+2014, 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
+
+=head1 License
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published
+by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to
+the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+MA 02110-1301, USA.
+
+=cut

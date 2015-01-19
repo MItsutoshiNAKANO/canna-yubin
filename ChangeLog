@@ -1,3 +1,7 @@
+2015-01-20  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
+
+	* yu2.PL: added Plain Old Document
+
 2015-01-05  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 
 	* configure.ac: added to use Automake.
