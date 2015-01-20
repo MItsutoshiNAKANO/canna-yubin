@@ -23,7 +23,7 @@ License: public-domain
 
 Files: yu2.PL
 Copyright: 2001 Yoshito Komatsu
-           2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
+           2014, 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 License: GPL-2+
 
 Files: Canna/Makefile.am Wnn/Makefile.am README.eucJP

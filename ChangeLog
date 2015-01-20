@@ -1,6 +1,8 @@
 2015-01-20  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 
 	* yu2.PL: added Plain Old Document
+	* COPYING (yu2.PL): added 2015 year
+	* debian/copyright (yu2.PL): added 2015 year
 
 2015-01-05  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 
