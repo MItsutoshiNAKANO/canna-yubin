@@ -32,35 +32,16 @@ AC_ARG_WITH([canna],
 AC_ARG_WITH([wnn], [--with-wnn	build Wnn dictionary [[default=no]]], [],
 [with_wnn=no])
 
-
-IMES=''
-
-case "$with_canna" in
-no) ;;
-yes)
-	IMES="$IMES Canna"
-	CANNADICDIR='/var/lib/canna/dic/canna/'
-	cannaMk='Canna/Makefile'
-	;;
-*)
-	IMES="$IMES Canna"
-	CANNADICDIR="$with_canna"
-	cannaMk='Canna/Makefile'
-	;;
+case "x$with_canna" in
+'xno') ;;
+'xyes') CANNADICDIR='/var/lib/canna/dic/canna/'	;;
+*) CANNADICDIR="$with_canna" ;;
 esac
 
-case "$with_wnn" in
-no) ;;
-yes)
-	IMES="$IMES Wnn"
-	WNNDICDIR='/usr/local/lib/wnn/ja_JP/dic/yubin/'
-	wnnMk='Wnn/Makefile'
-	;;
-*)
-	IMES="$IMES Wnn"
-	WNNDICDIR="$with_wnn"
-	wnnMk='Wnn/Makefile'
-	;;
+case "x$with_wnn" in
+'xno') ;;
+'xyes') WNNDICDIR='/usr/local/lib/wnn/ja_JP/dic/yubin/'	;;
+*) WNNDICDIR="$with_wnn" ;;
 esac
 
 AC_SUBST(IMES)
@@ -71,24 +52,27 @@ AC_SUBST(WNNDICDIR)
 AC_PROG_INSTALL
 AC_PROG_MKDIR_P
 
-if test "x$with_canna" != 'xno'
-then
+case "x$with_canna" in
+'xno') ;;
+x*)
 	AC_CHECK_PROGS(MKBINDIC, [mkbindic], [])
-	if test "x$MKBINDIC" == 'x'
-	then
-		AC_MSG_ERROR([could not find mkbindic.  Did you install Canna?])
-	fi
-fi
+	case "x$MKBINDIC" in
+	'x') AC_MSG_ERROR([could not find mkbindic.  Did you install Canna?]) ;;
+	esac
+	;;
+esac
 
-
-if test "x$with_wnn" != 'xno'
-then
+case "x$with_wnn" in
+'xno') ;;
+x*)
 	AC_CHECK_PROGS(ATOD, [atod], [])
-	if test "x$ATOD" == 'x'
-	then
+	case "x$ATOD" in
+	'x') 
 		AC_MSG_ERROR([could not find atod.  Did you install Wnn and set your PATH?  FreeWnn default, atod is installed /usr/local/bin/Wnn4/!])
-	fi
-fi
+		;;
+	esac
+	;;
+esac
 
 # Checks for libraries.
 
@@ -101,7 +85,7 @@ fi
 
 AC_CONFIG_FILES([
                  Makefile
-		 $cannaMk
-		 $wnnMk
+		 Canna/Makefile
+		 Wnn/Makefile
 		 ])
 AC_OUTPUT
