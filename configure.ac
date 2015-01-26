@@ -23,12 +23,11 @@ AC_INIT([canna-yubin], [0.3.0.20141226.0],
 [canna-yubin-misc@lists.sourceforge.jp])
 AM_INIT_AUTOMAKE
 
-#
+# Checks for options.
 
 AC_ARG_WITH([canna],
 [--with-canna	build Canna dictionary [[default=/var/lib/canna/dic/canna/]]],
 [], [with_canna=yes])
-
 AC_ARG_WITH([wnn], [--with-wnn	build Wnn dictionary [[default=no]]], [],
 [with_wnn=no])
 
@@ -37,23 +36,28 @@ case "x$with_canna" in
 'xyes') CANNADICDIR='/var/lib/canna/dic/canna/'	;;
 *) CANNADICDIR="$with_canna" ;;
 esac
+case "x$CANNADICDIR" in
+'x') ;;
+*) CANNATARGETS='yubin7.cbd yubin7.cld' ;;
+esac
 
 case "x$with_wnn" in
 'xno') ;;
 'xyes') WNNDICDIR='/usr/local/lib/wnn/ja_JP/dic/yubin/'	;;
 *) WNNDICDIR="$with_wnn" ;;
 esac
-
-AC_SUBST(IMES)
-AC_SUBST(CANNADICDIR)
-AC_SUBST(WNNDICDIR)
+case "x$WNNDICDIR" in
+'x') ;;
+*) WNNTARGETS='yubin7.dic';;
+esac
 
 # Checks for programs.
+
 AC_PROG_INSTALL
 AC_PROG_MKDIR_P
 
-case "x$with_canna" in
-'xno') ;;
+case "x$CANNADICDIR" in
+'x') ;;
 x*)
 	AC_CHECK_PROGS(MKBINDIC, [mkbindic], [])
 	case "x$MKBINDIC" in
@@ -62,8 +66,8 @@ x*)
 	;;
 esac
 
-case "x$with_wnn" in
-'xno') ;;
+case "x$WNNDICDIR" in
+'x') ;;
 x*)
 	AC_CHECK_PROGS(ATOD, [atod], [])
 	case "x$ATOD" in
@@ -74,6 +78,11 @@ x*)
 	;;
 esac
 
+AC_SUBST(CANNATARGETS)
+AC_SUBST(WNNTARGETS)
+AC_SUBST(CANNADICDIR)
+AC_SUBST(WNNDICDIR)
+
 # Checks for libraries.
 
 # Checks for header files.
@@ -82,10 +91,5 @@ esac
 
 # Checks for library functions.
 
-
-AC_CONFIG_FILES([
-                 Makefile
-		 Canna/Makefile
-		 Wnn/Makefile
-		 ])
+AC_CONFIG_FILES([Makefile])
 AC_OUTPUT

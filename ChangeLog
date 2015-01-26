@@ -1,3 +1,14 @@
+2015-01-26  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
+
+	* configure.ac: merged to 1 Makefile.am
+	* Makefile.am: merged to 1 Makefile.am
+	* NEWS: modified dictionaries directories
+	* COPYING: deleted (Canna|Wnn)/Makefile.(am|in)
+	* debian/copyright: deleted (Canna|Wnn)/Makefile.(am|in)
+	* AUTHORS: deleted (Canna|Wnn)/Makefile.(am|in)
+	* Canna/Makefile.am: deleted
+	* Wnn/Makefile.am: deleted
+
 2015-01-25  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 
 	* configure.ac: deleted IMES variable.

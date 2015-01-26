@@ -26,13 +26,12 @@ debian/compat debian/source/format
 created:
 AUTHORS COPYING ChangeLog README NEWS Makefile.am
 modified:
-README.eucJP yu2.PL configure.ac Canna/Makefile.am Wnn/Makefile.am
+README.eucJP yu2.PL configure.ac
 debian/changelog debian/control debian/copyright debian/docs debian/rules
 
 
 * Free Software Foundation, INC. - created automatically:
-COPYING.GPL2 INSTALL Makefile.in Canna/Makafile.in Wnn/Makafile.in aclocal.m4
-configure missing
+COPYING.GPL2 INSTALL Makefile.in aclocal.m4 configure missing
 
 
 * X Consortium - created automatically:
@@ -44,4 +43,5 @@ install-sh
 
 
 * public-domain - created automatically by canna-yubin:
-Canna/yubin7.cbd Canna/yubin7.cld Wnn/yubin7.dic
+yubin7.cbd yubin7.cld
+yubin7.dic

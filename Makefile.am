@@ -1,5 +1,6 @@
 ## Process this file with automake to produce Makefile.in
-# Copyright (C) 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
+# Copyright (C) 2001 Yoshito Komatsu
+#               2014, 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
 #
 # This program is free software; you can redistribute it and/or modify it 
 # under the terms of the GNU General Public License as published 
@@ -17,7 +18,30 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
 AUTOMAKE_OPTIONS= check-news
+SUFFIXES= .ctb .cbd .cld
 
-SUBDIRS= Canna Wnn
+EXTRA_DIST= yu2.PL KEN_ALL.CSV JIGYOSYO.CSV README.eucJP @CANNATARGETS@ @WNNTARGETS@
+CLEANFILES= @CANNATARGETS@ $(CANNATMPFILE) @WNNTARGETS@
 
-EXTRA_DIST= yu2.PL KEN_ALL.CSV JIGYOSYO.CSV README.eucJP
+cannadic_DATA= @CANNATARGETS@
+cannadicdir= @CANNADICDIR@
+CANNATMPFILE=yubin7.ctd
+
+wnndic_DATA= @WNNTARGETS@
+wnndicdir= @WNNDICDIR@
+
+$(wnndic_DATA):
+	$(top_srcdir)/yu2.PL --yubin=$(top_srcdir)/KEN_ALL.CSV --jigyosho=$(top_srcdir)/JIGYOSYO.CSV --ime=wnn | $(ATOD) -s 200000 $@
+
+$(cannadic_DATA): $(CANNATMPFILE)
+
+$(CANNATMPFILE):
+	$(top_srcdir)/yu2.PL --yubin=$(top_srcdir)/KEN_ALL.CSV --jigyosho=$(top_srcdir)/JIGYOSYO.CSV >$@
+
+.ctd.cbd:
+	$(MKBINDIC) $<
+
+.ctd.cld:
+	$(MKBINDIC) $<
+
+

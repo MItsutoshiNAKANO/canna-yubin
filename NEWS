@@ -11,7 +11,7 @@ Changed to use ./configure.
 0) Prepare Canna's "mkbindic".
 1) Type "./configure --with-canna".
 2) Type "make".
-3) You will get "Canna/yubin7.cbd" and "Canna/yubin7.cld".
+3) You will get "yubin7.cbd" and "yubin7.cld".
 
 
 * If you want to build Wnn dictionary:
@@ -23,7 +23,7 @@ Changed to use ./configure.
     So you have to add "/usr/local/bin/Wnn4" to $PATH.
 1) Type "./configure --with-wnn --without-canna".
 2) Type "make".
-3) You will get "Wnn/yubin7.dic".
+3) You will get "yubin7.dic".
 
 
 * Please see "./configure --help".
