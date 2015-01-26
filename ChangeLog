@@ -1,3 +1,10 @@
+2015-01-25  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
+
+	* configure.ac: deleted IMES variable.
+	* Makefile.am (SUBDIRS): changed.
+	* Canna/Makefile.am: changed comment.
+	* Wnn/Makefile.am: deleted yubin7.u file.
+
 2015-01-20  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 
 	* yu2.PL: added Plain Old Document
