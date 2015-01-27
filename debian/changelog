@@ -1,3 +1,46 @@
+canna-yubin (0.3.0.20141226.0-1ppa1) unstable; urgency=low
+
+  * new upstream release 0.3.0.20141226.0:
+    + supported (Free)Wnn
+    + used Autotools
+  * ../yu2.PL: renamed from yu2can.pl, supported (Free)Wnn
+    Others changes:
+    + convert charset encoding between Shift-JIS and EUC-JP.
+    + default CSV files name into capital letters from small letters,
+      because JAPAN POST Co., Ltd. shows files in capital letters.
+    + added Plain Old Document
+  * ../configure.ac: added to use Automake.
+  * ../Makefile.am: added to use Automake.
+  * ../Makefile: removed to use Automake.
+  * ../KEN_ALL.CSV: renamed fronm ken_all.csv and updated to 2014-12-26
+  * ../JIGYOSYO.CSV: renamed from jigyosyo.csv and updated to 2014-12-26
+  * ../ChangeLog: created
+  * ../AUTHORS: created
+  * ../INSTALL: created
+  * ../NEWS: created
+  * ../COPYING: modified:
+    + added ChangeLog & AUTHORS & INSTALL & NEWS
+    + CSV files name into capital letters
+    + yubin7.dic: add: (Free)Wnn's dictionary
+    + added 2015 year
+  * ../README: modified 2 points:
+    + added (Free)Wnn
+    + modified sentences
+  * ../README.eucJP: modified:
+    + added supporting (Free)Wnn
+    + modified files list.
+  * ../.gitignore: added to use Autotools.
+
+  * copyright: same as COPYING, see ../COPYING
+  * docs: added AUTHORS
+  * compat: changed 8->9
+  * control: modified: changed Build-Depends & Depends
+  * postinst: modified exit status to 1 if called with unknown argument
+  * prerm: modified exit status to 1 if called with unknown argument
+  * rules(%:): used autotools-dev
+
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Tue, 27 Jan 2015 08:55:25 +0900
+
 canna-yubin (0.1.1.20140731.3-1ppa1) trusty; urgency=low
 
   * Fixed debian/copyright COPYING: some files duplicate in them.
