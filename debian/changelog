@@ -28,7 +28,8 @@ canna-yubin (0.3.0.20141226.0-1ppa1) unstable; urgency=low
     + modified sentences
   * ../README.eucJP: modified:
     + added supporting (Free)Wnn
-    + modified files list.
+    + modified files list
+    + announced removing binary dictionaries
   * ../.gitignore: added to use Autotools.
 
   * copyright: same as COPYING, see ../COPYING

@@ -1,12 +1,18 @@
 2015-01-27  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 
+	* Makefile.am: removed binary dictionaries
+	* AUTHORS: removed binary dictionaries
+	* README.eucJP: announced removing binary dictionaries
+	* NEWS: announced removing binary dictionaries
 	* debian/changelog: added 0.3.0.20141226.0-1ppa1
-	* COPYING: modified: 2 thing
+	* COPYING: modified: 3 thing
 	  + added 2015 year
 	  + fixed typo s/JIGYOSHO.CSV/JIGYOSYO.CSV/
-	* debian/copyright: modified: 2 thing
+	  + removed binary dictionaries
+	* debian/copyright: modified: 3 thing
 	  + added 2015 year
 	  + fixed typo s/JIGYOSHO.CSV/JIGYOSYO.CSV/
+	  + removed binary dictionaries
 	* debian/compat: updated 8->9
 	* debian/postinst: deleted DICS variable
 	* debian/prerm: deleted DICS variable
@@ -43,6 +49,7 @@
 
 	* configure.ac: added to use Automake.
 	* Makefile.am: added to use Automake.
+	  debian/* files were deleted by tarball.
 	* Canna/Makefile.am: added to use Automake.
 	* Wnn/Makefile.am: added to use Automake.
 	* INSTALL: modified for ./configure.

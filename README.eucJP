@@ -44,15 +44,12 @@ AUTHORS, COPYINGを御覧下さい。
 
 
 3. 辞書バイナリの配布について
-辞書バイナリの配布についてどうするか検討したのですが、
-試験的にソースパッケージの中に一緒に入れてしまう事にしました。
-Perl、その他辞書バイナリを生成するツールをお持ちでないという方は
-使用してみてください。
-将来的にこの方式を継続するかどうかについてはまだ決めていません。
 
-一緒に入っている辞書バイナリのライセンスについて、
-日本郵便株式会社と同様にpublic-domainとします。
-詳しくはhttp://www.post.japanpost.jp/zipcode/dl/readme.html および
-ttp://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html を参照してください。
-(これがライセンスとして妥当であるか否かは議論の余地があると思います。
-良いアイデアがあればMLで教えてください。)
+version 0.3.0.* からupstreamとしてはバイナリ辞書の配布を
+止めることにしました。
+バイナリ辞書のみが欲しい方はopenSUSE Build Serviceから
+RPMファイルをダウンロードしてください。
+http://software.opensuse.org/package/canna-yubin?search_term=canna-yubin
+
+deb形式のファイルが欲しい方はDebian Bug Tracking System (BTS)に
+Request For Package (RFP)を投げていただければ対応するかもしれません。

@@ -4,9 +4,9 @@ canna-yubin NEWS
 0.3.0.20141226.0
 ----------------
 
-Changed to use ./configure.
+### Changed to use ./configure.
 
-* If you want to build Canna dictionary:
+#### If you want to build Canna dictionary:
 
 0) Prepare Canna's "mkbindic".
 1) Type "./configure --with-canna".
@@ -14,7 +14,7 @@ Changed to use ./configure.
 3) You will get "yubin7.cbd" and "yubin7.cld".
 
 
-* If you want to build Wnn dictionary:
+#### If you want to build Wnn dictionary:
 
 0) Prepare Wnn's "atod".
   NOTES:
@@ -26,7 +26,19 @@ Changed to use ./configure.
 3) You will get "yubin7.dic".
 
 
-* Please see "./configure --help".
+#### Please see "./configure --help".
+
+
+### Removed binary dictionaries.
+
+If you want binary,
+please get RPM files from openSUSE Build Service.
+http://software.opensuse.org/package/canna-yubin?search_term=canna-yubin
+
+If you want deb file,
+You should send RFP to Debian BTS.
+
+Please read README.eucJP.
 
 
 0.2.0.20141226.0
