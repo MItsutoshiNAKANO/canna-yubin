@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # prerm script for canna-yubin
 #
 # see: dh_installdeb(1)
@@ -13,9 +13,10 @@ set -e
 #        * <deconfigured's-prerm> `deconfigure' `in-favour'
 #          <package-being-installed> <version> `removing'
 #          <conflicting-package> <version>
-# for details, see /usr/share/doc/packaging-manual/
+# for details, see http://www.debian.org/doc/debian-policy/ or
+# the debian-policy package
 
-DICS=/var/lib/canna/dic/canna/dics.dir
+#DICS=/var/lib/canna/dic/canna/dics.dir
 
 case "$1" in
     remove|upgrade|deconfigure)
@@ -25,12 +26,14 @@ case "$1" in
 	if test -e /tmp/.iroha_unix/IROHA; then
 	    service canna restart
 	fi
-        ;;
+    ;;
+
     failed-upgrade)
-        ;;
+    ;;
+
     *)
         echo "prerm called with unknown argument \`$1'" >&2
-        exit 0
+        exit 1
     ;;
 esac
 
@@ -40,5 +43,3 @@ esac
 #DEBHELPER#
 
 exit 0
-
-
