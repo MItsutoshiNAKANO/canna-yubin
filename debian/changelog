@@ -1,0 +1,114 @@
+canna-yubin (0.3.0.20141226.0-1ppa1) unstable; urgency=low
+
+  * new upstream release 0.3.0.20141226.0:
+    + supported (Free)Wnn
+    + used Autotools
+  * ../yu2.PL: renamed from yu2can.pl, supported (Free)Wnn
+    Others changes:
+    + convert charset encoding between Shift-JIS and EUC-JP.
+    + default CSV files name into capital letters from small letters,
+      because JAPAN POST Co., Ltd. shows files in capital letters.
+    + added Plain Old Document
+  * ../configure.ac: added to use Automake.
+  * ../Makefile.am: added to use Automake.
+  * ../Makefile: removed to use Automake.
+  * ../KEN_ALL.CSV: renamed fronm ken_all.csv and updated to 2014-12-26
+  * ../JIGYOSYO.CSV: renamed from jigyosyo.csv and updated to 2014-12-26
+  * ../ChangeLog: created
+  * ../AUTHORS: created
+  * ../INSTALL: created
+  * ../NEWS: created
+  * ../COPYING: modified:
+    + added ChangeLog & AUTHORS & INSTALL & NEWS
+    + CSV files name into capital letters
+    + yubin7.dic: add: (Free)Wnn's dictionary
+    + added 2015 year
+  * ../README: modified 2 points:
+    + added (Free)Wnn
+    + modified sentences
+  * ../README.eucJP: modified:
+    + added supporting (Free)Wnn
+    + modified files list
+    + announced removing binary dictionaries
+  * ../.gitignore: added to use Autotools.
+
+  * copyright: same as COPYING, see ../COPYING
+  * docs: added AUTHORS
+  * compat: changed 8->9
+  * control: modified: changed Build-Depends & Depends
+  * postinst: modified exit status to 1 if called with unknown argument,
+    modified lintian's warning
+  * prerm: modified exit status to 1 if called with unknown argument,
+    modified lintian's warning
+  * rules(%): used autotools-dev
+
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Wed, 18 Mar 2015 08:09:37 +0900
+
+canna-yubin (0.1.1.20140731.3-1ppa1) trusty; urgency=low
+
+  * Fixed debian/copyright COPYING: some files duplicate in them.
+  * Changed Makefie: skip making a tmpfile (using pipe).
+
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Fri, 08 Aug 2014 15:25:28 +0900
+
+canna-yubin (0.1.1.20140731.2-1ppa1) trusty; urgency=low
+
+  * Fixed mkdir -p  make install's target directory.
+
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Fri, 08 Aug 2014 12:48:53 +0900
+
+canna-yubin (0.1.1.20140731.1-1ppa1) trusty; urgency=low
+
+  * Changed license of binary dictionary GPL-2+ => public-domain .
+  * Fixed lintian's warnings.
+
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Tue, 05 Aug 2014 12:14:34 +0900
+
+canna-yubin (0.1.1.20140731-1ppa1) trusty; urgency=low
+
+  * Fixed 0.1.0's bug: debian/rules forgot copying yubin.dics.dir.off.
+
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Tue, 05 Aug 2014 02:44:01 +0900
+
+canna-yubin (0.1.0.20140731-1ppa1) trusty; urgency=low
+
+  * updated data to 20140731.
+
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Mon, 04 Aug 2014 15:14:56 +0900
+
+canna-yubin (0.0.20011101) unstable; urgency=low
+
+  * New upstream release
+  * Modify postinst and prerm methods.
+  * Modify the upstream author's name.
+
+ -- Yoshito Komatsu <ykomatsu@debian.org>  Thu, 24 Jan 2002 16:31:07 +0900
+
+canna-yubin (0.0.20010601-1) unstable; urgency=low
+
+  * New upstream release 
+
+ -- Yoshito Komatsu <ykomatsu@debian.or.jp>  Sat,  4 Aug 2001 16:16:44 +0900
+
+canna-yubin (0.0.20010501-3) unstable; urgency=low
+
+  * New upstream release
+
+ -- Yoshito Komatsu <ykomatsu@debian.or.jp>  Mon,  9 Jul 2001 14:56:41 +0900
+
+canna-yubin (0.0.20010501-2) unstable; urgency=low
+
+  * Add README.eucJP file.
+  * Fix debian/copyright file.
+
+ -- Yoshito Komatsu <ykomatsu@debian.or.jp>  Wed,  4 Jul 2001 13:12:34 +0900
+
+canna-yubin (0.0.20010501-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Yoshito Komatsu <ykomatsu@debian.or.jp>  Mon,  2 Jul 2001 11:25:51 +0900
+
+Local variables:
+mode: debian-changelog
+End:
