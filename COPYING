@@ -4,12 +4,12 @@ Upstream-Contact: canna-yubin-misc ML <canna-yubin-misc@lists.sourceforge.jp>
 Source: https://sourceforge.jp/projects/canna-yubin/
 
 Files: KEN_ALL.CSV
-Copyright: 2014 JAPAN POST Co., Ltd.
+Copyright: 2014, 2015 JAPAN POST Co., Ltd.
 License: public-domain
  Please see http://www.post.japanpost.jp/zipcode/dl/readme.html .
 
 Files: JIGYOSYO.CSV
-Copyright: 2014 JAPAN POST Co., Ltd.
+Copyright: 2014, 2015 JAPAN POST Co., Ltd.
 License: public-domain
  Please see http://www.post.japanpost.jp/zipcode/dl/jigyosyo/readme.html .
 
