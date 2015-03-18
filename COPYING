@@ -59,30 +59,6 @@ Files: .gitignore
 Copyright: 2014 GitHub, Inc.
 License: GPL-2+
 
-# If you want to use GPL v2 or later for the /debian/* files use 
-# the following clauses, or change it to suit. Delete these two lines
-Files: debian/README.Debian debian/dirs debian/yubin.dics.dir.off
-Copyright: 2001 Yoshito Komatsu
-License: GPL-2+
-
-Files: debian/postinst debian/prerm
-Copyright: 2001 Yoshito Komatsu
-           2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
-License: GPL-2+
-
-Files: debian/changelog debian/control debian/docs debian/rules
-Copyright: 2001 Yoshito Komatsu
-           2014, 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
-License: GPL-2+
-
-Files: debian/source/*
-Copyright: 2014 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
-License: GPL-2+
-
-Files: debian/copyright debian/compat
-Copyright: 2014, 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
-License: GPL-2+
-
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
