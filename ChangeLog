@@ -1,5 +1,12 @@
 2015-03-18  Mitsutoshi NAKANO  <bkbin005@rinku.zaq.ne.jp>
 
+	* configure.ac: 0.3.1.20141226.0
+	* Makefile.am (EXTRA_DIST): added COPYING.GPL2
+	* COPYING: deleted debian/* files
+	* NEWS: added 0.3.1.20141226.0
+
+	* debian/*: deleted from master branch, please see debian branch
+
 	* debian/postinst: modified lintian's warning, #34154
 	* debian/prerm: modified lintian's warning, #34154
 	* debian/control (Depends): added canna-utils

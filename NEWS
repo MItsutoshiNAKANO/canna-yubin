@@ -1,6 +1,11 @@
 canna-yubin NEWS
 ================
 
+0.3.1.20141226.0
+----------------
+
+### Deleted debian/* files from master branch, please see debian branch.
+
 0.3.0.20141226.0
 ----------------
 
