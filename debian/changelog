@@ -36,11 +36,13 @@ canna-yubin (0.3.0.20141226.0-1ppa1) unstable; urgency=low
   * docs: added AUTHORS
   * compat: changed 8->9
   * control: modified: changed Build-Depends & Depends
-  * postinst: modified exit status to 1 if called with unknown argument
-  * prerm: modified exit status to 1 if called with unknown argument
-  * rules(%:): used autotools-dev
+  * postinst: modified exit status to 1 if called with unknown argument,
+    modified lintian's warning
+  * prerm: modified exit status to 1 if called with unknown argument,
+    modified lintian's warning
+  * rules(%): used autotools-dev
 
- -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Tue, 27 Jan 2015 08:55:25 +0900
+ -- Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>  Wed, 18 Mar 2015 08:09:37 +0900
 
 canna-yubin (0.1.1.20140731.3-1ppa1) trusty; urgency=low
 

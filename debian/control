@@ -10,7 +10,7 @@ Vcs-Browser: https://sourceforge.jp/projects/canna-yubin/scm/git/canna-yubin/
 
 Package: canna-yubin
 Architecture: all
-Depends: canna (>= 3.5b2-40), ${shlibs:Depends}, ${misc:Depends}
+Depends: canna-utils, canna (>= 3.5b2-40), ${shlibs:Depends}, ${misc:Depends}
 Description: Japanese postal code dictionary for Canna
  This package contains Japanese postal code dictionary used by Canna.
  It was made from CSV file produced by JAPAN POST Co., Ltd.

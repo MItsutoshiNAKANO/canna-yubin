@@ -23,7 +23,7 @@ case "$1" in
 	cp -f /etc/canna/dics.dir.d/yubin.dics.dir.off \
 	    /etc/canna/dics.dir.d/yubin.dics.dir
 	update-canna-dics_dir
-	if test -e /tmp/.iroha_unix/IROHA; then
+	if CANNAHOST='' cannastat; then
 	    service canna restart
 	fi
     ;;
