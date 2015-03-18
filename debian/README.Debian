@@ -1,7 +1,0 @@
-canna-yubin for Debian
-----------------
-
-To use canna-yubin, you should add "yubin7" to use-dictionary section in 
-~/.canna file.
-
- -- Yoshito Komatsu <ykomatsu@debian.org>, Mon,  2 Jul 2001 11:25:51 +0900
